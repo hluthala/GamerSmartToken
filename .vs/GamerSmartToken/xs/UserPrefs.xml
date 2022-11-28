@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ApiRestFull PreferredExecutionTarget="/Applications/Safari.app" FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContractInterface.ERC20/Constants.cs">
+    <Files>
+      <File FileName="ApiRestFull/Test/GamerTokenWebApi.postman_test.json" Line="567" Column="2" />
+      <File FileName="ApiRestFull/Program.cs" Line="49" Column="1" />
+      <File FileName="ApiRestFull/Services/ ContractService/AccountService.cs" Line="86" Column="6" />
+      <File FileName="ApiRestFull/Services/ ContractService/ContractService.cs" Line="35" Column="1" />
+      <File FileName="ApiRestFull/Services/ ContractService/IAccountService.cs" Line="11" Column="24" />
+      <File FileName="ApiRestFull/appsettings.json" Line="9" Column="37" />
+      <File FileName="ApiRestFull/Controllers/AuthController.cs" Line="22" Column="46" />
+      <File FileName="ApiRestFull/Controllers/ContractController.cs" Line="26" Column="48" />
+      <File FileName="ApiRestFull/Controllers/PeopleController.cs" Line="107" Column="6" />
+      <File FileName="ApiRestFull/Models/RequestWrappers/ContractRequest.cs" Line="9" Column="6" />
+      <File FileName="ApiRestFull/Models/RequestWrappers/DeployRequest.cs" Line="14" Column="6" />
+      <File FileName="ApiRestFull/Models/RequestWrappers/PeopleRequest.cs" Line="13" Column="6" />
+      <File FileName="ApiRestFull/Models/RequestWrappers/TransactionRequest.cs" Line="14" Column="1" />
+      <File FileName="ContractInterface.Common/Helpers/OperationResults/DeploymentResult.cs" Line="20" Column="1" />
+      <File FileName="ContractInterface.Common/Helpers/OperationResults/TransactionResult.cs" Line="17" Column="43" />
+      <File FileName="ContractInterface.Common/Entities/AccountDAO.cs" Line="20" Column="1" />
+      <File FileName="ContractInterface.Common/Entities/ContractDAO.cs" Line="6" Column="1" />
+      <File FileName="ContractInterface.Common/Entities/EOAAppointeeDAO.cs" Line="8" Column="6" />
+      <File FileName="ContractInterface.Common/Entities/EOAHolderDAO.cs" Line="14" Column="1" />
+      <File FileName="ContractInterface.Common/Facade/Constants.cs" Line="22" Column="80" />
+      <File FileName="ContractInterface.Common/Facade/ContractFacade_Cache.cs" Line="124" Column="6" />
+      <File FileName="ContractInterface.Common/Facade/ContractFacade_Deployment.cs" Line="192" Column="6" />
+      <File FileName="ContractInterface.Common/Facade/ContractFacade_Init.cs" Line="3" Column="1" />
+      <File FileName="ContractInterface.Common/Facade/IContractFacade.cs" Line="21" Column="1" />
+      <File FileName="ContractInterface.ERC20/IContractOperation.cs" Line="8" Column="40" />
+      <File FileName="ContractInterface.ERC20/Contract_View.cs" Line="9" Column="35" />
+      <File FileName="ContractInterface.ERC20/Contract_Transaction.cs" Line="11" Column="32" />
+      <File FileName="ContractInterface.ERC20/Contract_Init.cs" Line="4" Column="1" />
+      <File FileName="ContractInterface.ERC20/Constants.cs" Line="51" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GamerSmartToken" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ContractInterface.Common FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ContractInterface.ERC20 FirstBuild="True" />
+</Properties>

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRestFull", "ApiRestFull\ApiRestFull.csproj", "{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "smartContracts", "smartContracts", "{4320CEF6-0D49-4490-A78F-7D2F6E7B0819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestChain", "TestChain", "{C452F029-A68A-41A3-A14D-AC5D304AFD3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractInterface.Common", "ContractInterface.Common\ContractInterface.Common.csproj", "{538E5AD3-FE61-4627-A8DC-854081EB1972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractInterface.ERC20", "ContractInterface.ERC20\ContractInterface.ERC20.csproj", "{6BBA6562-B3AE-46E3-8BF9-4BCB5E394613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A955D0ED-D960-4B85-95C3-EBB7AB86CC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538E5AD3-FE61-4627-A8DC-854081EB1972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538E5AD3-FE61-4627-A8DC-854081EB1972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538E5AD3-FE61-4627-A8DC-854081EB1972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538E5AD3-FE61-4627-A8DC-854081EB1972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BBA6562-B3AE-46E3-8BF9-4BCB5E394613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BBA6562-B3AE-46E3-8BF9-4BCB5E394613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BBA6562-B3AE-46E3-8BF9-4BCB5E394613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BBA6562-B3AE-46E3-8BF9-4BCB5E394613}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A899EC2A-9888-4576-8631-E88862B968B6}
+	EndGlobalSection
+EndGlobal

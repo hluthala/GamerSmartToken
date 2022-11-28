@@ -1,0 +1,567 @@
+﻿{
+  "info": {
+    "_postman_id": "82b68c76-6d95-46e4-a8ce-219e594d9548",
+    "name": "GamerTokenWebApi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Deploy default",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"Address\":\"0x12890d2cce102216644c59daE5baed380d84830c\",\n\t\"Password\":\"password\"\n}"
+        },
+        "url": {
+          "raw": "localhost:5000/api/contract/deploy/default",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "contract",
+            "deploy",
+            "default"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Total supply",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "localhost:5000/api/contract/0x243e72b69141f6af525a9a5fd939668ee9f2b354/totalsupply",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "contract",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "totalsupply"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add holder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "newHolderAddress",
+            "value": "0x13f022d72158410433cbd66f5dd8bf6d2d129924",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToAdd\":\"0x243e72b69141f6af525a9a5fd939668ee9f2b354\"\n}"
+        },
+        "url": {
+          "raw": "localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/holder/add",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "holder",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Remove holder",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToRemove\":\"0x2a212f50a2a020010ea88cc33fc4c333e6a5c5c4\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/holder/remove",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "holder",
+            "remove"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Holder exist",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NDgzMDQ4MSwiZXhwIjoxNTQ0ODM0MDgxLCJpYXQiOjE1NDQ4MzA0ODF9.DlISa2TODgjgzT_IsUKPPNwkNmAyxfdZTef0pWgOqOY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToInquire\":\"0x12890d2cce102216644c59dae5baed380d84830c\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/holder/inquire",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "holder",
+            "inquire"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Approve appointee",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "toAdd",
+            "value": "\"0x13f022d72158410433cbd66f5dd8bf6d2d129924\"",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "allowance",
+            "value": "2000",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToAdd\":\"0x13f022d72158410433cbd66f5dd8bf6d2d129924\",\n\t\"Allowance\":\"2000\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/appointee/approve?",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "appointee",
+            "approve"
+          ],
+          "query": [
+            {
+              "key": "toAdd",
+              "value": "\"0x13f022d72158410433cbd66f5dd8bf6d2d129924\"",
+              "disabled": true
+            },
+            {
+              "key": "allowance",
+              "value": "2000",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Remove appointee",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToRemove\":\"0x13f022d72158410433cbd66f5dd8bf6d2d129924\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/appointee/remove",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "appointee",
+            "remove"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Allowance",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToInquire\":\"0x2a212f50a2a020010ea88cc33fc4c333e6a5c5c4\",\n\t\"MapTo\":\"0xd0828aeb00e4db6813e2f330318ef94d2bba2f60\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/appointee/inquire",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "appointee",
+            "inquire"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Authenticate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"Address\":\"0x12890d2cce102216644c59dae5baed380d84830c\",\n\t\"Password\":\"password\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transfer",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"FromAddress\":\"0x12890d2cce102216644c59dae5baed380d84830c\",\n\t\"ToAddress\":\"0x243e72b69141f6af525a9a5fd939668ee9f2b354\",\n\t\"Amount\":997000\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/transfer",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "transfer"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Balance of",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"ToInquire\":\"0x12890d2cce102216644c59dae5baed380d84830c\"\n}\u0001"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/0x243e72b69141f6af525a9a5fd939668ee9f2b354/people/balance",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "people",
+            "balance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get owner",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjB4MTI4OTBkMmNjZTEwMjIxNjY0NGM1OWRhZTViYWVkMzgwZDg0ODMwYyIsIm5iZiI6MTU0NTEzMzY3OSwiZXhwIjoxNTQ1MTM3Mjc5LCJpYXQiOjE1NDUxMzM2Nzl9.L5j-oMM68yNXXe4KQ2I8HqHeAwFlrxoMEAYheqk2Rxk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/contract/0x243e72b69141f6af525a9a5fd939668ee9f2b354/owner",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "contract",
+            "0x243e72b69141f6af525a9a5fd939668ee9f2b354",
+            "owner"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

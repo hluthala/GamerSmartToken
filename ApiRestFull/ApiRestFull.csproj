@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Nethereum.Web3" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Nethereum.Web3" />
+    <None Remove="Test\" />
+    <None Remove="Services\" />
+    <None Remove="Services\ ContractService\" />
+    <None Remove="Models\" />
+    <None Remove="Models\RequestWrappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContractInterface.Common\ContractInterface.Common.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ContractInterface.ERC20\ContractInterface.ERC20.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\ ContractService\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\RequestWrappers\" />
+  </ItemGroup>
+</Project>
